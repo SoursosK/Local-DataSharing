@@ -13,7 +13,7 @@ def selectFolder():
 
 def serve():
     httpd = HTTPServer(('0.0.0.0', 8000), SimpleHTTPRequestHandler)
-    print('The server will be running at ' + socket.gethostbyname(socket.gethostname()) + ' for 2 minutes!\n')
+    print('The server will be running at ' + socket.gethostbyname(socket.gethostname()) + ':8000/ for 2 minutes!\n')
     httpd.serve_forever()
 
 
